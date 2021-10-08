@@ -1,0 +1,38 @@
+{
+    "connections": {
+      "mongodb": "MongoDB Connection Established Successfully",
+      "server": "Server Running Successfully on"
+    },
+    "mongodb": {
+      "dbEmpty": "Database Empty. Add items to populate the database",
+      "dbItemSuccess": "Data Saved Successfully",
+      "dbItemExists": "Data with same key/attribute/value Already Exists",
+      "dbDelSuccess": "Database Item deleted successfully",
+      "dbEditSuccess": "Database Item edited successfully",
+      "dbItemNotFound": "Database Item Not Found. Try again"
+    },
+    "error": {
+      "empty": "No Data Found",
+      "internalError": "Internal Server Error. Please try again later",
+      "unexpected": "Unexpected Error Occured",
+      "unSupported": "File type not supported",
+      "noTitle": "No Name/Title Found. Please try again with appropriate name/title",
+      "enterAllNeccessarry": "Please fill in all the neccessary details"
+    },
+    "authError": {
+      "unauthenticated": "No Authentication Token Found. Access Denied",
+      "unauthorized": "Token Authorization Failed. Access Denied",
+      "userAlreadyExists": "User Account already exists with the same E-Mail/Phone Number",
+      "noUser": "No User Found with entered credentials",
+      "invalidCredentials": "Invalid credentials.Please try again."
+    },
+    "userAuth": {
+      "registerSuccess": "User Account Created Successfully",
+      "expiresIn": "1h",
+      "loginSuccess": "Login Successful",
+      "refCodeLen": 10,
+      "refCodeArr": "12345abcde",
+      "mobileNumArr": "9121839192"
+    }
+  }
+  
