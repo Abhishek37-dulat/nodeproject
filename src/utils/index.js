@@ -9,7 +9,7 @@ export const checkItem = async (Collection, name) => {
 export const getAllItems = async (Collection, res, populate) => {
   try {
     const allItems = populate
-      ? await Collection.find().populate("name")
+      ? await Collection.find().populate()
       : await Collection.find();
     if (allItems.length) return res.status(200).json(allItems);
     if (!allItems.length)

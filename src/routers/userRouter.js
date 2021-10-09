@@ -6,7 +6,7 @@ import {
   verifyEmail,
   ActuallyResetPassword,
   PasswordResetStuff
-  // ,getAllUsers
+  ,getAllUsers
   // ,userProfile
   // ,updateProfile
   // ,deleteProfile
@@ -21,7 +21,7 @@ userRouter.get("/verified", verifyPageRoute);
 userRouter.get("/verify/:userId/:uniqueString", verifyEmail);
 userRouter.post("/requestPasswordReset", PasswordResetStuff);
 userRouter.post("/resetPassword", ActuallyResetPassword);
-// userRouter.post("/getUsers", getAllUsers);
+userRouter.get("/get", getAllUsers);
 
 
 //nodemailer for to send email

@@ -574,6 +574,6 @@ export const ActuallyResetPassword = (req, res) => {
 
 
 
-// export const getAllUsers = async (_req, res) => {
-//   await getAllItems(User, res);
-// };
+export const getAllUsers = async (_req, res) => {
+  await getAllItems(User, res);
+};
