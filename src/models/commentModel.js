@@ -10,14 +10,10 @@ const commentSchema = new Schema(
       type: String,
       required: true,
     },
-    userid: {
-      type: String,
-      required: true,
-    },
     content: {
       type: String,
       required: true,
-      },
+    },
     uploaddate: {
       type: Date,
       default: Date.now(),

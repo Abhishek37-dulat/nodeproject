@@ -4,7 +4,7 @@ import { addItem, deleteItem, editItem, getAllItems } from "../utils";
 
 // SubIdea-----------------------------------------
 export const getAllSubIdea = async (_req, res) => {
-    const populate = "category";
+    const populate = "name";
     await getAllItems(subpostIdeaModel, res, populate);
   };
   

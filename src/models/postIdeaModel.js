@@ -2,10 +2,6 @@ import { model, Schema, Types } from "mongoose";
 
 const postIdeaSchema = new Schema(
   {
-    createrid:{
-        type: String,
-        required: true,  
-    },
     title: {
       type: String,
       required: true,
@@ -18,7 +14,9 @@ const postIdeaSchema = new Schema(
       type: Date,
       default: Date.now(),
     },
-    image: String,
+    image: {
+      type: String
+    },
     comments:[{
         comment:{
             type: String,

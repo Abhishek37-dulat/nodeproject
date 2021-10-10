@@ -3,22 +3,24 @@ import {
   addIdea, 
   updateIdea, 
   deleteIdea, 
-  getAllIdea, 
+  getAllIdea,  
+} from "../controllers/postController";
+import {
   addSubIdea,
   updateSubIdea, 
   deleteSubIdea, 
   getAllSubIdea, 
-} from "../controllers/userController";
+} from "../controllers/postSubideaController";
 import Auth from "../middlewares/Auth";
 
 const postideaRouter = Router();
 
-postideaRouter.post("/addidea",Auth, addIdea);
-postideaRouter.post("/updateidea",Auth, updateIdea);
-postideaRouter.post("/deleteidea",Auth, deleteIdea);
-postideaRouter.get("/getallidea",Auth, getAllIdea);
-postideaRouter.post("/addsubidea",Auth, addSubIdea);
-postideaRouter.post("/updatesubidea",Auth, updateSubIdea);
-postideaRouter.post("/deletesubidea",Auth, deleteSubIdea);
-postideaRouter.get("/getallsubidea",Auth, getAllSubIdea);
+postideaRouter.post("/addidea", addIdea);
+postideaRouter.post("/updateidea", updateIdea);
+postideaRouter.post("/deleteidea", deleteIdea);
+postideaRouter.get("/getallidea", getAllIdea);
+postideaRouter.post("/addsubidea", addSubIdea);
+postideaRouter.post("/updatesubidea", updateSubIdea);
+postideaRouter.post("/deletesubidea", deleteSubIdea);
+postideaRouter.get("/getallsubidea", getAllSubIdea);
 export default postideaRouter;

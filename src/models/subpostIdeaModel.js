@@ -6,10 +6,6 @@ const subpostIdeaSchema = new Schema(
         type: String,
         required: true,  
     },
-    userid:{
-      type: String,
-      required: true,  
-    },
     content: {
       type: String,
       required: true,

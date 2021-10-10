@@ -3,7 +3,8 @@ import mongoose from "mongoose";
 import { config } from "dotenv";
 import constants from "./constants.json";
 import userRouter from "./routers/userRouter";
-// import postideaRouter from "./routers/postideaRouter";
+import postideaRouter from "./routers/postideaRouter";
+import commentRouter from "./routers/commentRouter";
 // import "./db/conn";
 
 import {Router} from "express";
@@ -35,8 +36,8 @@ app.use("/", router.get('/', (req, res) => {
 
   
 app.use("/user", userRouter);
-// app.use("/comment", commentRouter);
-// app.use("/idea", postideaRouter);
+app.use("/comment", commentRouter);
+app.use("/idea", postideaRouter);
 
 
 app.listen(PORT, () => {

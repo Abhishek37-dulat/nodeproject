@@ -40,12 +40,17 @@ export const addItem = async (Collection, inputItem, res) => {
         discountPrice: inputItem?.discountPrice,
         faq: inputItem?.faq,
         category: inputItem?.category,
-        postid: inputItem?.postid, 
+        postid: inputItem?.postid,
+        title: inputItem?.title,
+        content: inputItem?.content, 
+        image: inputItem?.image,
+        profilePicture: inputItem?.profilePicture,
         subid: inputItem?.subid, 
         userid: inputItem?.userid, 
         content: inputItem?.content, 
         uploaddate: inputItem?.uploaddate, 
-        comments: inputItem?.comments
+        comments: inputItem?.comments,
+        commentid: inputItem?.commentid
       });
       const savedItem = await newItem.save();
       return res
